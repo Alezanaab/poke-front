@@ -1,10 +1,18 @@
-//import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Router, Switch,  Routes, Route, Link } from 'react-router-dom';
+import Home from './pages/Home/Home';
+import { Container } from 'react-bootstrap';
 
-export default function App() {
+function App() {
   return (
-    <div>
-      <h1  class="text-3xl font-bold underline">Bookkeeper!</h1>
-    </div>
+    <BrowserRouter>
+    <Container fluid>
+      <Switch>
+          <Route exact path='/Home'  component={ Home } />
+          <Route path='/Search' component = { Home } />
+      </Switch>
+      </Container>
+    </BrowserRouter>
   );
- }
+}
+
+export default App;
