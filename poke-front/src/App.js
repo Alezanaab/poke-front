@@ -7,7 +7,7 @@ function App() {
     <BrowserRouter>
     <Container fluid>
       <Switch>
-          <Route exact path='/Home'  component={ Home } />
+          <Route exact path='/'  component={ Home } />
           <Route path='/Search' component = { Home } />
       </Switch>
       </Container>

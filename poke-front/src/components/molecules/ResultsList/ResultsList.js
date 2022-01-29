@@ -8,7 +8,9 @@ const ResultsList = (props) => {
             
                     <SimpleCard key={Math.random()}
                         title={props.data.name ? props.data.name : '' }
-                        img={props.data.sprites && props.data.sprites.back_default ? props.data.sprites.back_default : ''} />
+                        img={props.data.sprites && props.data.sprites.back_default ? props.data.sprites.back_default : ''} 
+                        weight={props.data.weight ? props.data.weight : ''}
+                        height={props.data.height ? props.data.height : '' }/>
         </div>
     )
 }

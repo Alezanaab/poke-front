@@ -1,0 +1,26 @@
+.container{
+    position: relative;
+}
+
+.main {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.user-name{
+    padding-top: 100px;
+}
+
+nav:first-child{
+    margin: 6rem;
+}
+
+.btn-link a{
+    color: purple;
+    text-decoration: underline;
+    font-size: 20px;
+}

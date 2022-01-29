@@ -1,8 +1,13 @@
 .card {
-    width: 70%;
+    width: 350px;
     margin-bottom: 30px;
 }
 
 .button{
     color: purple;
+}
+
+.card-img{
+    width: 300px;
+    height: 250px;
 }
