@@ -9,7 +9,7 @@ import './HomeStyle.css';
 
 /* templates */
 import Search from '../../components/templates/Search/Search';
-
+import Favorites from '../../components/templates/Favorites/Favorites';
 import Dashboard from '../../components/templates/Dashboard/Dashboard';
 
 
@@ -22,6 +22,7 @@ const Home = () => {
             </Col>
             <Col>
                 <Switch>
+                    <Route path='/Favorites' component={ Favorites} />
                     <Route path='/Search' component={Search} />
                     <Route path='/' component={Dashboard} />
                 </Switch>

@@ -15,7 +15,13 @@ const Navigation = () => {
             <br />
             <Navbar expand="lg" >
                     <Navbar.Brand className="mx-auto" >
-                        <NavButton route="Search" title="SEARCH"/>
+                        <NavButton route="Search" title="SEARCH POKEMONS"/>
+                    </Navbar.Brand> 
+            </Navbar>
+            <br />
+            <Navbar expand="lg" >
+                    <Navbar.Brand className="mx-auto" >
+                        <NavButton route="Favorites" title="MY FAVORITES"/>
                     </Navbar.Brand> 
             </Navbar>
             <br />
