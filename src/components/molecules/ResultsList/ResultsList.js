@@ -1,5 +1,5 @@
 import React from 'react';
-import SimpleCard from '../SimpleCard/SimpleCard'
+import SimpleCard from '../SimpleCard/SimpleCard';
 
 const ResultsList = (props) => {
 

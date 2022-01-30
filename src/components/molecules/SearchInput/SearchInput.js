@@ -19,7 +19,7 @@ class SearchInput extends React.Component {
             <Form onSubmit={this.onFormSubmit} >
                 <Container>
                     <Row  className="search-input">
-                        <Col md={5}>
+                        <Col>
                             <Form.Group controlId="searchText" >
                                 <Form.Control type="text"
                                     required
