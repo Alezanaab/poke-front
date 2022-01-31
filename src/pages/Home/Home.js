@@ -20,7 +20,7 @@ const Home = () => {
             <Col sm={3} className="gray-right-border">
                 <Navigation />
             </Col>
-            <Col>
+            <Col className='canvas'>
                 <Switch>
                     <Route path='/Favorites' component={ Favorites} />
                     <Route path='/Search' component={Search} />

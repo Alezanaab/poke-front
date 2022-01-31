@@ -42,7 +42,7 @@ const SimpleCard = (props) => {
         .then((response) => {
           console.log('resp', response.data);
           setPostP(response.data);
-          if (response.status == '200') {
+          if (response.status === '200') {
             setModal(true);
             setPostP(response.data);
           }

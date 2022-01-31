@@ -4,3 +4,8 @@
 .gray-right-border{
     border-right: 3px solid #d9dddc;
 }
+
+.canvas{
+    background-color: #ffe481;
+    border: #8f9ab5 15px solid;
+}

@@ -1,0 +1,43 @@
+.welcome-message {
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.pokemon {
+    width: 400px;
+    margin: 0 25px;
+}
+
+.pikachu {
+    width: 400px;
+    margin: 25px;
+}
+
+.introduce-text {
+    border-radius: 5px;
+border: 1px gray solid;
+width: 500px;
+margin: 25px;
+font-size: 18px;
+background-color: white;
+border: black solid 3px;
+box-shadow: unset;
+box-shadow: -4px 5px 0px 0px rgba(0,0,0,0.75);
+}
+
+.text-search{
+    display: flex;
+    margin-left: 250px;
+}
+
+.text-welcome {
+    display: flex;
+    margin-right: 250px;
+
+}
