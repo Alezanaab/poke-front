@@ -1,0 +1,26 @@
+.search-welcome {
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: row;
+    text-align: center;
+    align-items: center;
+}
+
+img.scizor {
+    width: 250px;
+}
+
+.typing-text{
+    border-radius: 5px;
+    border: 1px gray solid;
+    width: 800px;
+    margin: 25px;
+    font-size: 18px;
+    background-color: white;
+    border: black solid 3px;
+    box-shadow: unset;
+    box-shadow: -4px 5px 0px 0px rgba(0,0,0,0.75);
+}

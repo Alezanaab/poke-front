@@ -10,19 +10,19 @@
 }
 
 .pokemon {
-    width: 400px;
+    max-width: 250px;
     margin: 0 25px;
 }
 
 .pikachu {
-    width: 400px;
-    margin: 25px;
+    max-width: 208px;
+    margin: 25px 25px 0 25px;
 }
 
 .introduce-text {
     border-radius: 5px;
 border: 1px gray solid;
-width: 500px;
+max-width: 250px;
 margin: 25px;
 font-size: 18px;
 background-color: white;
@@ -31,13 +31,40 @@ box-shadow: unset;
 box-shadow: -4px 5px 0px 0px rgba(0,0,0,0.75);
 }
 
+
+
+
 .text-search{
     display: flex;
-    margin-left: 250px;
+    margin-left: 170px;
 }
 
 .text-welcome {
     display: flex;
-    margin-right: 250px;
+    margin-right: 154px;
 
+}
+
+
+@media (min-width: 768px){
+    
+    .pikachu {
+        max-width: 400px;
+    }
+
+    .introduce-text {
+        max-width: 500px;
+    }
+
+    .pokemon{
+        max-width: 400px;
+    }
+
+    .text-welcome {
+        margin-right: 250px;
+    }
+
+    .text-search{
+        margin-left: 250px;
+    }
 }

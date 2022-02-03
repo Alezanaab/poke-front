@@ -7,6 +7,7 @@ import { Container, Alert } from 'react-bootstrap';
 
 import SimpleLabel from '../../atoms/SimpleLabel/SimpleLabel';
 import FavoriteCard from '../../molecules/FavoriteCard/FavoriteCard';
+import './Favorites.css';
 
 class Favorites extends React.Component {
 
@@ -16,7 +17,6 @@ class Favorites extends React.Component {
     }
 
     componentDidMount() {
-        console.log('component did mount', this.props);
         this.findAllmyPokemons();
 
     }
@@ -24,20 +24,15 @@ class Favorites extends React.Component {
 
     findAllmyPokemons = async (entry) => {
         try {
-            /*FETCH */
             fetch("http://localhost:3000/api/mypokemons")
                 .then(res => res.json())
                 .then(
                     (result) => {
-                        console.log(result);
                         this.setState({
                             data: result
                         });
-                        console.log(this.state.data);
                     },
-                    // Note: it's important to handle errors here
-                    // instead of a catch() block so that we don't swallow
-                    // exceptions from actual bugs in components.
+
                     (error) => {
                         this.setState({
                             isLoaded: true,
@@ -57,11 +52,10 @@ class Favorites extends React.Component {
     render() {
         return (
             <div>
-                <SimpleLabel text="This are my Favorites Pokemon" />
-                <Container>
+                <SimpleLabel text="These are my favorite Pokemons" />
+                <Container className="favorites">
                 {this.state.data.map(function (item, i) {
-                    console.log('test');
-                    return <FavoriteCard item={item} />
+                    return <FavoriteCard key={i} item={item} />
                 })
                 }   
                 </Container>       

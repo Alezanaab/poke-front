@@ -19,77 +19,75 @@ const SimpleCard = (props) => {
   });
   const [modal, setModal] =  React.useState(false);
 
-  console.log('postP',postP);
-  console.log('props',props);
+ 
 
-  
+
 
 
   const createPost = (event) => {
 
-    console.log('props',props);
-    console.log('oknya', event);
-      axios
-        .post(baseURL, {
-          owner: "me",
-          info: {
-            "title": props.title,
-            "img" : props.img,
-            "weight": props.weight,
-            "height": props.height,
-          }
-        })
-        .then((response) => {
-          console.log('resp', response.data);
+ 
+    axios
+      .post(baseURL, {
+        owner: "me",
+        info: {
+          "title": props.title,
+          "img" : props.img,
+          "weight": props.weight,
+          "height": props.height,
+        }
+      })
+      .then((response) => {
+        setPostP(response.data);
+        if (response.status === 200) {
+          setModal(true);
           setPostP(response.data);
-          if (response.status === '200') {
-            setModal(true);
-            setPostP(response.data);
-          }
-        });
-    }
-
-    const handleClose = () => setModal(false);
-
-
-    return (
-      <div>
-        <Container>
-          <Card>
-            <Card.Img src={props.img} />
-            <Card.Body >
-              <Card.Title>{props.title}</Card.Title>
-              <Row>
-                <Col md={10} >
-                  <Card.Text>
-                    {props.weight ? `Weight: ${props.weight}` : ''}
-                    <br />
-                    {props.height ? `Height: ${props.height}` : ''}
-                  </Card.Text>
-                </Col>
-                <Col md={1}>
-                  <Button onClick={createPost} variant="primary">Favorite?</Button>
-                </Col>
-              </Row>
-            </Card.Body>
-          </Card>
-          <Modal show={modal} onHide={handleClose}>
-              <Modal.Header closeButton>
-                <Modal.Title>Added to your favs!</Modal.Title>
-              </Modal.Header>
-
-              <Modal.Body>
-                <p>{postP.owner}</p>
-                <p>{postP.info.title}</p>
-                <p>{postP.info.img}</p>
-                <p>{postP.info.weight}</p>
-                <p>{postP.info.height}</p>
-              </Modal.Body>
-            </Modal>
-        </Container>
-      </div>
-    );
+        }
+      });
   }
 
+  const handleClose = () => setModal(false);
 
-  export default SimpleCard;
+
+  return (
+    <div>
+      <Container>
+      <div>
+        <div className='pokedex' style={{ backgroundImage: "url('images/pokedex-1.png')" }}>
+          <div className="poke-info">
+            <div className='title'>
+              <img src={props.img}></img>
+              <p>{props.title}</p>
+            </div>
+            <div className='wh'>
+              <p>Weigh: {props.weight}</p>
+              <p>Height {props.height}</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <Button onClick={createPost} variant="primary">Favorite?</Button>
+        </div>
+        
+        </div>
+
+         <Modal show={modal} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Congratulations!</Modal.Title>
+          </Modal.Header>
+
+          <Modal.Body>
+            <p>A new pokemon has ben added to your favorites!</p>
+            <p>{postP.info.title}</p>
+            <img src={postP.info.img}></img>
+            <p>Weight: {postP.info.weight}</p>
+            <p>Height: {postP.info.height}</p>
+          </Modal.Body>
+        </Modal>
+        </Container>
+    </div>
+  );
+}
+
+
+export default SimpleCard;

@@ -24,7 +24,6 @@ class Search extends React.Component {
                 'Accept': 'application/json'
                 }
             })
-            console.log(response.data);
             
             
 

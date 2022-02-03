@@ -8,3 +8,16 @@
     justify-content: center;
     padding: 25px;
 }
+
+input {
+    border-radius: 5px;
+border: 1px gray solid;
+width: 450px;
+margin: 25px;
+font-size: 18px;
+background-color: white;
+border: black solid 3px !important;
+box-shadow: unset;
+box-shadow: -4px 5px 0px 0px rgba(0,0,0,0.75);
+}
+

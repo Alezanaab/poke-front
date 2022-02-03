@@ -1,13 +1,78 @@
 .card {
     width: 250px;
     margin: 20px;
+    border: black solid 3px !important;
+    box-shadow: unset;
+    box-shadow: -4px 5px 0px 0px rgb(0 0 0 / 75%);
 }
 
-.button{ 
-    color: purple;
-}
 
 .card-img{
     width: 300px;
-    height: 250px;
+    height: 200px;
+}
+
+.card-body{
+    background-color: #3269b2;
+}
+
+.card-title {
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+
+.card-text{
+    text-align: center;
+    background-color: #99b4d9;
+    border-radius: 5px;
+}
+.close {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.close .btn-secondary{
+    width: 50px;
+    border-radius: 0px;
+    color: gray;
+    background-color: white;
+    border: none;
+}
+
+button.edit.btn.btn-secondary{
+    width: 100%;
+    background-color: #ffcb05;
+}
+
+.modal-dialog {
+    border-radius: 5px;
+    border: 1px gray solid;
+    font-size: 18px;
+    background-color: white;
+    border: black solid 3px !important;
+    box-shadow: unset;
+    box-shadow: -4px 5px 0px 0px rgb(0 0 0 / 75%);
+}
+
+.input[name="weigth"] {
+    border-radius: 5px;
+    border: 1px gray solid;
+    margin: 25px;
+    font-size: 18px;
+    background-color: white;
+    border: black solid 3px !important;
+    box-shadow: unset;
+}
+
+button.modal-save.btn.btn-primary{
+    width: 100%;
+    background-color: #ffcb05;
+    border-color: #ffcb05;
+}
+
+button.modal-save.btn.btn-secondary{
+    width: 100%;
 }

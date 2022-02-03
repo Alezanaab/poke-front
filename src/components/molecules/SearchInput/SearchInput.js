@@ -9,7 +9,6 @@ class SearchInput extends React.Component {
 
     onFormSubmit = (event) => {
         event.preventDefault();
-        console.log(this.state.entry);
         this.props.onSearchSubmit(this.state.entry);
     }
 
@@ -34,7 +33,7 @@ class SearchInput extends React.Component {
                         </Col>
                         <Col>
                             <Button variant="primary" type="submit">
-                                Submit
+                                Find it!
                 </Button>
                         </Col>
                     </Row>

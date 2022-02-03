@@ -1,0 +1,7 @@
+.favorites {
+    DISPLAY: FLEX;
+    FLEX-DIRECTION: row;
+    FLEX-WRAP: wrap;
+    height: 500px;
+    overflow: auto;
+}
