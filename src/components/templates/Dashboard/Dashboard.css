@@ -1,0 +1,70 @@
+.welcome-message {
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.pokemon {
+    max-width: 250px;
+    margin: 0 25px;
+}
+
+.pikachu {
+    max-width: 208px;
+    margin: 25px 25px 0 25px;
+}
+
+.introduce-text {
+    border-radius: 5px;
+border: 1px gray solid;
+max-width: 250px;
+margin: 25px;
+font-size: 18px;
+background-color: white;
+border: black solid 3px;
+box-shadow: unset;
+box-shadow: -4px 5px 0px 0px rgba(0,0,0,0.75);
+}
+
+
+
+
+.text-search{
+    display: flex;
+    margin-left: 170px;
+}
+
+.text-welcome {
+    display: flex;
+    margin-right: 154px;
+
+}
+
+
+@media (min-width: 768px){
+    
+    .pikachu {
+        max-width: 400px;
+    }
+
+    .introduce-text {
+        max-width: 500px;
+    }
+
+    .pokemon{
+        max-width: 400px;
+    }
+
+    .text-welcome {
+        margin-right: 250px;
+    }
+
+    .text-search{
+        margin-left: 250px;
+    }
+}
